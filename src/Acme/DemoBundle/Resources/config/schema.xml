@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="default" namespace="Acme\DemoBundle\Model" defaultIdMethod="native">
+
+  <table name="section" phpName="Section">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="name" type="varchar" size="100" />
+    <column name="pid" type="integer" defaultValue="null"/>
+    <foreign-key foreignTable="section" phpName="Parent" refPhpName="Children">
+      <reference local="pid" foreign="id" />
+    </foreign-key>
+  </table>
+
+  <table name="author">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="full_name" type="varchar" size="50" />
+  </table>
+
+  <table name="article">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="title" type="varchar" primaryString="1" size="100" />
+    <column name="description" type="varchar" size="255" />
+    <column name="content" type="longvarchar" />
+    <column name="author_id" type="integer" />
+    <column name="section_id" type="integer" />
+    <foreign-key foreignTable="author">
+      <reference local="author_id" foreign="id" />
+    </foreign-key>
+    <foreign-key foreignTable="section">
+      <reference local="section_id" foreign="id" />
+    </foreign-key>
+  </table>
+
+</database>

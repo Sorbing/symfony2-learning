@@ -1,0 +1,22 @@
+Acme\DemoBundle\Model\Article:
+  article_symfony:
+    Title: Symfony 2.3 Installing and Configuring Symfony
+    Description: How to install Symfony 2.3
+    Content: The goal of this chapter is to get you up and running with a working application built on top of Symfony. Fortunately, Symfony offers "distributions", which are functional Symfony "starter" projects that you can download and begin developing in immediately.
+    AuthorId: author1
+    SectionId: section_sf
+
+  article_propel:
+    Title: Propel 1.6 Column element
+    Description: About Column Attributes
+    Content: For performance reasons, it is often a good idea to set BLOB and CLOB columns as lazyLoaded. A resultset containing one of more very large columns takes time to transit between the database and the PHP server, so you want to make sure this only happen when you actually need it.
+    AuthorId: author1
+    SectionId: section_propel
+
+  article_twig_ext:
+    Title: Twig Form Extension
+    Description: How to Create a Custom Form Field Type
+    Content: Symfony comes with a bunch of core field types available for building forms. However there are situations where you may want to create a custom form field type for a specific purpose
+    AuthorId: author_potencier
+    SectionId: section_sf
+

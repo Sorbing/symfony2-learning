@@ -1,0 +1,15 @@
+Acme\DemoBundle\Model\Section:
+  section_dev:
+    Name: Development
+  section_php:
+    Name: PHP
+    Pid: section_dev
+  section_sf:
+    Name: Symfony 2.3
+    Pid: section_php
+  section_propel:
+    Name: Propel 1.6
+    Pid: section_php
+  section_js:
+    Name: JavaScript
+    Pid: section_dev

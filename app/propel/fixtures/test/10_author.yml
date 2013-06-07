@@ -1,0 +1,5 @@
+Acme\DemoBundle\Model\Author:
+  author1:
+    FullName: Sorbing (Stanislav Butsenko)
+  author_potencier:
+    FullName: Fabien Potencier
